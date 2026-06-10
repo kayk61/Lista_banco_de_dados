@@ -1,0 +1,102 @@
+--Atividade--1
+
+SELECT * FROM OrderDetails
+WHERE ProductID > 10 and Quantity > 15
+ORDER BY OrderDetailID;
+
+--Atividade--2
+
+SELECT * FROM OrderDetails
+WHERE OrderID < 100 AND Quantity > 20
+ORDER BY ProductID;
+
+--Atividade--3
+
+SELECT * FROM OrderDetails
+WHERE ProductID BETWEEN 5 AND 15 AND OrderID %2 = 0
+ORDER BY Quantity;
+
+--Atividade--4
+SELECT * FROM OrderDetails
+WHERE OrderDetailID > 50 AND ProductID like '%0'
+ORDER BY OrderID;
+
+--Atividade--5
+SELECT * FROM OrderDetails
+WHERE Quantity < 12 AND OrderID BETWEEN 100 AND 200
+ORDER BY ProductID
+
+--Atividade--6
+SELECT * FROM OrderDetails
+WHERE OrderID = 300 AND Quantity BETWEEN 10 AND 20
+ORDER BY OrderDetailID
+
+--Atividade--7
+SELECT * FROM OrderDetails
+WHERE ProductID > 20 AND Quantity %2 != 0
+ORDER BY OrderID
+
+--Atividade--8
+ELECT * FROM OrderDetails
+WHERE OrderDetailID %5= 0 AND ProductID > 10
+ORDER BY Quantity
+
+--Atividade--9
+SELECT * FROM OrderDetails
+WHERE Quantity > 18 AND OrderID like '%3'
+ORDER BY ProductID
+
+--Atividade--10
+SELECT * FROM OrderDetails
+WHERE ProductID %4 = 0 AND OrderDetailID < 200
+ORDER BY Quantity
+
+--Atividade--11
+SELECT * FROM OrderDetails
+WHERE OrderID %3 = 0 AND Quantity > 10
+ORDER BY OrderDetailId
+
+--Atividade--12
+SELECT * FROM OrderDetails
+WHERE OrderDetailID like '%6' AND Quantity BETWEEN  20 AND 40
+ORDER BY ProductID
+
+--Atividade--13
+SELECT * FROM OrderDetails
+WHERE ProductID > 30 AND OrderID > 100
+ORDER BY Quantity
+
+--Atividade--14
+SELECT * FROM OrderDetails
+WHERE Quantity %7 = 0 AND OrderDetailID < 300
+ORDER BY ProductID
+
+--Atividade--15
+SELECT * FROM OrderDetails
+WHERE OrderID BETWEEN 150 AND 300 AND Quantity > 25
+ORDER BY OrderDetailID 
+
+--Atividade--16
+SELECT * FROM OrderDetails
+WHERE Quantity < 20 AND ProductID like '%5'
+ORDER BY OrderID 
+
+--Atividade--17
+SELECT * FROM OrderDetails
+WHERE OrderID > 500 AND ProductID %3 = 0
+ORDER BY Quantity
+
+--Atividade--18
+SELECT * FROM OrderDetails
+WHERE OrderDetailID BETWEEN 100 AND 200 AND Quantity < 15
+ORDER BY ProductID
+
+--Atividade--19
+SELECT * FROM OrderDetails
+WHERE ProductID > 10 AND OrderID <50
+ORDER BY Quantity
+
+--Atividade--20
+SELECT * FROM OrderDetails
+WHERE OrderDetailID < 10 AND Quantity %2 = 0
+ORDER BY OrderID
