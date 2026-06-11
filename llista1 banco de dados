@@ -100,3 +100,203 @@ ORDER BY Quantity
 SELECT * FROM OrderDetails
 WHERE OrderDetailID < 10 AND Quantity %2 = 0
 ORDER BY OrderID
+
+--Atividade--21
+SELECT * FROM OrderDetails
+WHERE OrderID BETWEEN 300 AND 400 AND ProductID < 20
+ORDER BY Quantity
+
+--Atividade--22
+SELECT * FROM OrderDetails
+WHERE Quantity > 30 AND OrderDetailID like '%8'
+ORDER BY OrderID
+
+--Atividade--23
+SELECT * FROM OrderDetails
+WHERE OrderID %6= 0 AND Quantity BETWEEN 15 AND 35
+ORDER BY ProductId
+
+--Atividade--24
+SELECT * FROM OrderDetails
+WHERE ProductID > 25 AND OrderDetailID %3 = 0
+ORDER BY Quantity
+
+--Atividade--25
+SELECT * FROM OrderDetails
+WHERE OrderDetailID> 400 AND OrderID %5 = 0
+ORDER BY Quantity
+
+--Atividade-- 26
+SELECT *
+FROM OrderDetails
+WHERE Quantity < 10
+  AND OrderID > 50
+ORDER BY ProductID;
+
+--Atividade-- 27
+SELECT *
+FROM OrderDetails
+WHERE ProductID BETWEEN 5 AND 20
+  AND OrderID LIKE '%7'
+ORDER BY OrderDetailID;
+
+--Atividade-- 28
+SELECT *
+FROM OrderDetails
+WHERE OrderID < 200
+  AND Quantity > 25
+ORDER BY ProductID;
+
+--Atividade-- 29
+SELECT *
+FROM OrderDetails
+WHERE ProductID % 9 = 0
+  AND Quantity BETWEEN 10 AND 20
+ORDER BY OrderID;
+
+--Atividade-- 30
+SELECT *
+FROM OrderDetails
+WHERE Quantity > 50
+  AND ProductID < 30
+ORDER BY OrderDetailID;
+
+--Atividade-- 31
+SELECT *
+FROM OrderDetails
+WHERE OrderDetailID % 4 = 0
+  AND OrderID < 300
+ORDER BY Quantity;
+
+--Atividade-- 32
+SELECT *
+FROM OrderDetails
+WHERE Quantity < 5
+  AND OrderID BETWEEN 10 AND 100
+ORDER BY ProductID;
+
+--Atividade-- 33
+SELECT *
+FROM OrderDetails
+WHERE OrderID LIKE '%2'
+  AND ProductID > 15
+ORDER BY Quantity;
+
+--Atividade-- 34
+SELECT *
+FROM OrderDetails
+WHERE Quantity < 12
+  AND OrderDetailID > 150
+ORDER BY OrderID;
+
+--Atividade-- 35
+SELECT *
+FROM OrderDetails
+WHERE ProductID BETWEEN 20 AND 40
+  AND Quantity % 3 = 0
+ORDER BY Quantity;
+
+--Atividade-- 36
+SELECT *
+FROM OrderDetails
+WHERE OrderID > 700
+  AND Quantity > 40
+ORDER BY ProductID;
+
+--Atividade-- 37
+SELECT *
+FROM OrderDetails
+WHERE ProductID % 8 = 0
+  AND OrderID < 400
+ORDER BY Quantity;
+
+--Atividade-- 38
+SELECT *
+FROM OrderDetails
+WHERE Quantity > 15
+  AND OrderDetailID LIKE '%4'
+ORDER BY OrderID;
+
+--Atividade-- 39
+SELECT *
+FROM OrderDetails
+WHERE OrderID < 100
+  AND ProductID BETWEEN 10 AND 20
+ORDER BY OrderDetailID;
+
+--Atividade-- 40
+SELECT *
+FROM OrderDetails
+WHERE Quantity < 30
+  AND ProductID % 5 = 0
+ORDER BY OrderID;
+
+--Atividade-- 41
+SELECT *
+FROM OrderDetails
+WHERE ProductID LIKE '%9'
+  AND Quantity < 20
+ORDER BY OrderDetailID;
+
+--Atividade-- 42
+SELECT *
+FROM OrderDetails
+WHERE OrderID % 5 = 0
+  AND ProductID BETWEEN 15 AND 30
+ORDER BY Quantity;
+
+--Atividade-- 43
+SELECT *
+FROM OrderDetails
+WHERE Quantity BETWEEN 25 AND 50
+  AND OrderDetailID % 7 = 0
+ORDER BY OrderID;
+
+--Atividade-- 44
+SELECT *
+FROM OrderDetails
+WHERE OrderID < 250
+  AND Quantity % 6 = 0
+ORDER BY ProductID;
+
+--Atividade-- 45
+SELECT *
+FROM OrderDetails
+WHERE OrderDetailID BETWEEN 50 AND 150
+  AND ProductID > 20
+ORDER BY Quantity;
+
+--Atividade-- 46
+SELECT *
+FROM OrderDetails
+WHERE OrderID = 350
+  AND Quantity > 30
+ORDER BY ProductID;
+
+--Atividade-- 47
+SELECT *
+FROM OrderDetails
+WHERE ProductID LIKE '%0'
+  AND OrderDetailID % 2 = 0
+ORDER BY OrderID;
+
+--Atividade-- 48
+SELECT *
+FROM OrderDetails
+WHERE Quantity BETWEEN 10 AND 25
+  AND ProductID < 50
+ORDER BY Quantity;
+
+--Atividade-- 49
+SELECT *
+FROM OrderDetails
+WHERE OrderID LIKE '%1'
+  AND Quantity % 5 = 0
+ORDER BY OrderDetailID;
+
+--Atividade-- 50
+SELECT *
+FROM OrderDetails
+WHERE OrderDetailID > 300
+  AND Quantity < 12
+ORDER BY OrderID;
