@@ -314,12 +314,12 @@ GROUP BY ShipperID
 ORDER BY ResumoTransportes DESC;
 
 50
-SELECT TOP 3
-CONCAT(e.FirstName, ' ', e.LastName) AS Funcionario,
-COUNT(o.OrderID) AS TotalEncomendas
+SELECT TOP 3 
+    CONCAT(E.FirstName, ' ', E.LastName) AS NomeCompleto,
+    COUNT(O.OrderID) AS TotalEncomendas
 INTO RelatorioFinal
-FROM Employees e
-JOIN Orders o ON e.EmployeeID = o.EmployeeID
-GROUP BY e.EmployeeID, e.FirstName, e.LastName
-HAVING COUNT(o.OrderID) > 5
+FROM Employees E
+INNER JOIN Orders O ON E.EmployeeID = O.EmployeeID
+GROUP BY E.EmployeeID, E.FirstName, E.LastName
+HAVING COUNT(O.OrderID) > 5
 ORDER BY TotalEncomendas DESC;
