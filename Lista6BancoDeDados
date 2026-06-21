@@ -1,0 +1,500 @@
+-- BLOCO 1 - MIN e MAX
+
+1.
+SELECT MIN(Quantity)
+FROM OrderDetails;
+
+2.
+SELECT MAX(Quantity)
+FROM OrderDetails;
+
+3.
+SELECT MIN(OrderID)
+FROM OrderDetails;
+
+4.
+SELECT MAX(OrderID)
+FROM OrderDetails
+WHERE Quantity > 5;
+
+5.
+SELECT MIN(Quantity)
+FROM OrderDetails
+WHERE ProductID = 3;
+
+6.
+SELECT MAX(OrderDetailID)
+FROM OrderDetails
+WHERE Quantity < 10;
+
+7.
+SELECT MIN(ProductID)
+FROM OrderDetails;
+
+8.
+SELECT MAX(Quantity)
+FROM OrderDetails
+ORDER BY ProductID ASC;
+
+9.
+SELECT MIN(OrderID)
+FROM OrderDetails
+ORDER BY Quantity DESC;
+
+10.
+SELECT MAX(Quantity)
+FROM OrderDetails
+WHERE ProductID <> 2;
+
+11.
+SELECT MIN(OrderDetailID)
+FROM OrderDetails
+ORDER BY OrderID ASC;
+
+12.
+SELECT MIN(Quantity)
+FROM OrderDetails
+WHERE OrderID > 50;
+
+13.
+SELECT MAX(Quantity)
+FROM OrderDetails
+WHERE ProductID = 4
+ORDER BY OrderDetailID ASC;
+
+14.
+SELECT MIN(OrderDetailID)
+FROM OrderDetails
+WHERE Quantity > 15;
+
+15.
+SELECT MAX(Quantity)
+FROM OrderDetails
+WHERE ProductID BETWEEN 5 AND 10;
+
+16.
+SELECT MIN(OrderID)
+FROM OrderDetails
+WHERE MOD(Quantity,5) = 0;
+
+17.
+SELECT MAX(OrderDetailID)
+FROM OrderDetails
+ORDER BY Quantity ASC;
+
+18.
+SELECT MIN(Quantity)
+FROM OrderDetails
+WHERE OrderID < 30;
+
+19.
+SELECT MAX(Quantity)
+FROM OrderDetails
+ORDER BY ProductID DESC;
+
+20.
+SELECT MIN(ProductID)
+FROM OrderDetails
+WHERE Quantity > 20;
+
+21.
+SELECT MAX(Quantity)
+FROM OrderDetails
+WHERE ProductID = 6
+ORDER BY OrderID ASC;
+
+22.
+SELECT MIN(OrderID)
+FROM OrderDetails
+ORDER BY OrderDetailID ASC;
+
+23.
+SELECT MAX(OrderDetailID)
+FROM OrderDetails
+WHERE ProductID > 10;
+
+24.
+SELECT MIN(Quantity)
+FROM OrderDetails
+ORDER BY OrderID ASC;
+
+25.
+SELECT MAX(OrderID)
+FROM OrderDetails
+WHERE Quantity < 10;
+
+26.
+SELECT MIN(Quantity)
+FROM OrderDetails
+WHERE MOD(ProductID,2) = 0;
+
+27.
+SELECT MAX(OrderDetailID)
+FROM OrderDetails
+WHERE MOD(Quantity,3) = 0;
+
+28.
+SELECT MIN(ProductID)
+FROM OrderDetails
+WHERE Quantity BETWEEN 5 AND 15;
+
+29.
+SELECT MAX(Quantity)
+FROM OrderDetails
+WHERE OrderID BETWEEN 50 AND 100;
+
+30.
+SELECT MIN(OrderID)
+FROM OrderDetails
+WHERE Quantity < 8
+ORDER BY ProductID ASC;
+
+31.
+SELECT MAX(Quantity)
+FROM OrderDetails
+ORDER BY OrderDetailID ASC;
+
+32.
+SELECT MIN(Quantity)
+FROM OrderDetails
+WHERE OrderID < 20;
+
+33.
+SELECT MAX(Quantity)
+FROM OrderDetails
+WHERE ProductID < 10;
+
+34.
+SELECT MIN(OrderDetailID)
+FROM OrderDetails
+WHERE Quantity > 12;
+
+35.
+SELECT MAX(OrderID)
+FROM OrderDetails
+WHERE ProductID LIKE '2%';
+
+36.
+SELECT MIN(Quantity)
+FROM OrderDetails
+WHERE OrderID BETWEEN 10 AND 30;
+
+37.
+SELECT MAX(OrderDetailID)
+FROM OrderDetails
+WHERE ProductID BETWEEN 3 AND 8;
+
+38.
+SELECT MIN(OrderID)
+FROM OrderDetails
+ORDER BY Quantity ASC;
+
+39.
+SELECT MAX(Quantity)
+FROM OrderDetails
+WHERE ProductID NOT BETWEEN 5 AND 15;
+
+40.
+SELECT MIN(OrderDetailID)
+FROM OrderDetails
+WHERE Quantity > 18;
+
+41.
+SELECT MAX(OrderID)
+FROM OrderDetails
+ORDER BY ProductID ASC;
+
+42.
+SELECT MIN(Quantity)
+FROM OrderDetails
+WHERE ProductID < 12;
+
+43.
+SELECT MAX(OrderDetailID)
+FROM OrderDetails
+WHERE Quantity BETWEEN 7 AND 14;
+
+44.
+SELECT MIN(OrderID)
+FROM OrderDetails
+ORDER BY Quantity ASC;
+
+45.
+SELECT MAX(Quantity)
+FROM OrderDetails
+WHERE OrderID > 30;
+
+46.
+SELECT MIN(OrderDetailID)
+FROM OrderDetails
+WHERE MOD(Quantity,2) = 0;
+
+47.
+SELECT MAX(OrderID)
+FROM OrderDetails
+ORDER BY ProductID DESC;
+
+48.
+SELECT MIN(Quantity)
+FROM OrderDetails
+WHERE ProductID LIKE '%5';
+
+49.
+SELECT MAX(OrderDetailID)
+FROM OrderDetails
+WHERE Quantity < 20;
+
+50.
+SELECT MIN(OrderID)
+FROM OrderDetails
+WHERE Quantity > 25;
+
+
+-- BLOCO 2 - COUNT
+
+51.
+SELECT COUNT(OrderDetailID)
+FROM OrderDetails;
+
+52.
+SELECT COUNT(DISTINCT OrderID)
+FROM OrderDetails;
+
+53.
+SELECT COUNT(DISTINCT ProductID)
+FROM OrderDetails;
+
+54.
+SELECT COUNT(OrderDetailID)
+FROM OrderDetails
+WHERE Quantity > 10;
+
+55.
+SELECT COUNT(OrderDetailID)
+FROM OrderDetails
+WHERE OrderID = 5;
+
+56.
+SELECT COUNT(ProductID)
+FROM OrderDetails
+WHERE Quantity < 20;
+
+57.
+SELECT COUNT(OrderDetailID)
+FROM OrderDetails
+WHERE MOD(OrderDetailID,2) = 0;
+
+58.
+SELECT COUNT(OrderDetailID)
+FROM OrderDetails
+WHERE Quantity BETWEEN 5 AND 15;
+
+59.
+SELECT COUNT(OrderDetailID)
+FROM OrderDetails
+WHERE OrderID > 50;
+
+60.
+SELECT COUNT(OrderDetailID)
+FROM OrderDetails
+WHERE ProductID = 3;
+
+61.
+SELECT COUNT(OrderDetailID)
+FROM OrderDetails
+WHERE MOD(Quantity,3) = 0;
+
+62.
+SELECT COUNT(OrderID)
+FROM OrderDetails
+WHERE OrderID > 100;
+
+63.
+SELECT COUNT(OrderDetailID)
+FROM OrderDetails
+WHERE OrderDetailID < 20;
+
+64.
+SELECT COUNT(OrderDetailID)
+FROM OrderDetails
+WHERE ProductID < 8;
+
+65.
+SELECT COUNT(OrderDetailID)
+FROM OrderDetails
+WHERE Quantity > 25;
+
+66.
+SELECT COUNT(ProductID)
+FROM OrderDetails
+WHERE OrderID < 15;
+
+67.
+SELECT COUNT(OrderDetailID)
+FROM OrderDetails
+WHERE Quantity < 5;
+
+68.
+SELECT COUNT(OrderID)
+FROM OrderDetails
+WHERE Quantity > 30;
+
+69.
+SELECT COUNT(OrderDetailID)
+FROM OrderDetails
+WHERE MOD(ProductID,2) = 0;
+
+70.
+SELECT COUNT(OrderDetailID)
+FROM OrderDetails
+WHERE Quantity BETWEEN 10 AND 20;
+
+71.
+SELECT COUNT(OrderDetailID)
+FROM OrderDetails
+WHERE ProductID > 15;
+
+72.
+SELECT COUNT(OrderDetailID)
+FROM OrderDetails
+WHERE OrderDetailID LIKE '1%';
+
+73.
+SELECT COUNT(OrderDetailID)
+FROM OrderDetails
+WHERE OrderID = 10;
+
+74.
+SELECT COUNT(OrderDetailID)
+FROM OrderDetails
+WHERE Quantity LIKE '%0';
+
+75.
+SELECT COUNT(OrderID)
+FROM OrderDetails
+WHERE ProductID < 4;
+
+76.
+SELECT COUNT(OrderDetailID)
+FROM OrderDetails
+WHERE Quantity < 12;
+
+77.
+SELECT COUNT(OrderDetailID)
+FROM OrderDetails
+WHERE OrderDetailID > 100;
+
+78.
+SELECT COUNT(OrderDetailID)
+FROM OrderDetails
+WHERE OrderID = 8;
+
+79.
+SELECT COUNT(ProductID)
+FROM OrderDetails
+WHERE Quantity > 15;
+
+80.
+SELECT COUNT(OrderDetailID)
+FROM OrderDetails
+WHERE MOD(Quantity,2) <> 0;
+
+81.
+SELECT COUNT(OrderDetailID)
+FROM OrderDetails
+WHERE ProductID BETWEEN 2 AND 10;
+
+82.
+SELECT COUNT(OrderDetailID)
+FROM OrderDetails
+WHERE OrderID > 20;
+
+83.
+SELECT COUNT(OrderDetailID)
+FROM OrderDetails
+WHERE Quantity = 10;
+
+84.
+SELECT COUNT(OrderDetailID)
+FROM OrderDetails
+WHERE OrderDetailID LIKE '%3';
+
+85.
+SELECT COUNT(DISTINCT ProductID)
+FROM OrderDetails
+WHERE Quantity > 18;
+
+86.
+SELECT COUNT(OrderDetailID)
+FROM OrderDetails
+WHERE OrderID < 50;
+
+87.
+SELECT COUNT(OrderDetailID)
+FROM OrderDetails
+WHERE Quantity = 5;
+
+88.
+SELECT COUNT(OrderDetailID)
+FROM OrderDetails
+WHERE ProductID LIKE '4%';
+
+89.
+SELECT COUNT(OrderID)
+FROM OrderDetails
+WHERE Quantity > 15;
+
+90.
+SELECT COUNT(OrderDetailID)
+FROM OrderDetails
+WHERE OrderDetailID < 25;
+
+91.
+SELECT COUNT(OrderDetailID)
+FROM OrderDetails
+WHERE OrderID BETWEEN 30 AND 70;
+
+92.
+SELECT COUNT(OrderDetailID)
+FROM OrderDetails
+WHERE ProductID = 7;
+
+93.
+SELECT COUNT(OrderDetailID)
+FROM OrderDetails
+WHERE Quantity > 20;
+
+94.
+SELECT COUNT(OrderDetailID)
+FROM OrderDetails
+WHERE OrderID > 15;
+
+95.
+SELECT COUNT(OrderDetailID)
+FROM OrderDetails
+WHERE ProductID LIKE '%6';
+
+96.
+SELECT COUNT(OrderDetailID)
+FROM OrderDetails
+WHERE Quantity BETWEEN 7 AND 14;
+
+97.
+SELECT COUNT(OrderDetailID)
+FROM OrderDetails
+WHERE OrderID > 90;
+
+98.
+SELECT COUNT(OrderDetailID)
+FROM OrderDetails
+WHERE OrderDetailID < 50;
+
+99.
+SELECT COUNT(OrderDetailID)
+FROM OrderDetails
+WHERE Quantity > 30;
+
+100.
+SELECT COUNT(OrderDetailID)
+FROM OrderDetails
+WHERE OrderID BETWEEN 10 AND 40;
