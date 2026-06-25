@@ -1,4 +1,3 @@
--- BLOCO 1 - MIN e MAX
 
 1.
 SELECT MIN(Quantity)
